@@ -16,7 +16,7 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 
-// images dizisini döngüyle gezerek, her bir resmi liste elemanı olarak ekleyelim
+
 const galleryListItems = images.map((image) => {
   const listItem = document.createElement("li");
   listItem.classList.add("list-item");
@@ -29,5 +29,5 @@ const galleryListItems = images.map((image) => {
   return listItem;
 });
 
-// Tüm liste öğelerini tek bir işlemle DOM'a ekle
+
 galleryList.append(...galleryListItems);
